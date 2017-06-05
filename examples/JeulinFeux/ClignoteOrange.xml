@@ -1,0 +1,30 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <toolboxcategories>CAT_LOGIC,CAT_LOOPS,CAT_MATH,CAT_ARRAY,CAT_TEXT,CAT_VARIABLES,CAT_FUNCTIONS,CAT_ARDUINO,CAT_TECHNOJOLIE</toolboxcategories>
+  <toolbox>toolbox_arduino_4</toolbox>
+  <block type="feux_voie1_orange" id="bBMY],bTdMu$V@,t1xnp" x="-387" y="-162">
+    <field name="STAT">HIGH</field>
+    <next>
+      <block type="base_delay" id="vEvP(2L:nXu0tM4-^]xY">
+        <value name="DELAY_TIME">
+          <shadow type="math_number" id="+?6K+{]5U9f};ayRJvYf">
+            <field name="NUM">1000</field>
+          </shadow>
+        </value>
+        <next>
+          <block type="feux_voie1_orange" id="K0d]L:7AADCD..j6lVNQ">
+            <field name="STAT">LOW</field>
+            <next>
+              <block type="base_delay" id="?#5G(inO2{p)KruLJAS6">
+                <value name="DELAY_TIME">
+                  <shadow type="math_number" id="y[h]q`Bp_$OEp*M)0Td#">
+                    <field name="NUM">1000</field>
+                  </shadow>
+                </value>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>

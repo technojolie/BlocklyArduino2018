@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <toolbox>
-	<parametre id="defaultCategories">CAT_LOGIC,CAT_LOOPS,CAT_VARIABLES,CAT_FUNCTIONS,CAT_MATH,CAT_ARDUINO
+	<parametre id="defaultCategories">CAT_LOGIC,CAT_LOOPS,CAT_VARIABLES,CAT_FUNCTIONS,CAT_MATH,CAT_ARDUINO,CAT_TECHNOJOLIE
 	</parametre>
 	<category name="CAT_LOGIC" colour="#E1A91A">
 		<block type="controls_if"></block>
@@ -1915,5 +1915,123 @@
 				</value>
 		</block>
 		<block type="Sharp_IR_read"></block>
+	</category>
+		<category name="CAT_TECHNOJOLIE" colour="210">
+	
+		<category name="CAT_TECHNOJOLIE_IN" colour="210">
+		<block type="cap_us_sr04">
+				<value name="TRIGER">
+					<shadow type="math_number">
+						<field name="NUM">7</field>
+					</shadow>
+				</value>
+				<value name="ECHO">
+					<shadow type="math_number">
+						<field name="NUM">6</field>
+					</shadow>
+				</value>
+		</block>
+		<block type="cap_temperature_sensor_367">
+				<value name="PIN">
+					<shadow type="math_number">
+						<field name="NUM">1</field>
+					</shadow>
+				</value>
+		</block>
+		</category>
+		
+		<category name="CAT_TECHNOJOLIE_SERVO" colour="210">
+			
+			<block type="servo_param">
+				<value name="PIN">
+					<shadow type="math_number">
+						<field name="PIN">0</field>
+					</shadow>
+				</value>
+				<value name="ANGLE">
+					<shadow type="inout_angle">
+					<field name="NUM">90</field>
+					</shadow>
+				</value>
+			</block>
+			<block type="servo_rot_continue_param">
+				<value name="PIN">
+					<shadow type="math_number">
+						<field name="PIN">0</field>
+					</shadow>
+				</value>
+				<value name="SPEED">
+					<shadow type="math_number">
+					<field name="NUM">90</field>
+					</shadow>
+				</value>
+			</block>		
+		</category>
+		
+		<category name="CAT_TECHNOJOLIE_COMM" colour="210">
+			<!--<block type="LC05BT"></block>-->
+			<block type="Bluetooth_Shield_duinoFun">
+				<value name="BT_RX">
+					<shadow type="math_number">
+						<field name="NUM">7</field>
+					</shadow>
+				</value>
+				<value name="BT_TX">
+					<shadow type="math_number">
+						<field name="NUM">6</field>
+					</shadow>
+				</value>
+			</block>
+			<!--<block type="soft_serialavailablerx0"></block>-->
+			<block type="soft_serialavailable"></block>
+			<!-- <block type="soft_recvdonnees_setrx0"></block> -->
+			<block type="soft_recvdonnees_set"></block>
+			<block type="ArduiLed"></block>
+			<block type="LCD_Keypad_Shield_DFR_09">
+				<value name="TEXT1">
+					<shadow type="text">
+						<field name="TEXT"></field>
+					</shadow>
+				</value>
+				<value name="TEXT2">
+					<shadow type="text">
+						<field name="TEXT"></field>
+					</shadow>
+				</value>
+				<value name="DELAY_TIME">
+					<shadow type="math_number">
+						<field name="NUM">1000</field>
+					</shadow>
+				</value>
+			</block>
+			<block type="LCD_Keypad_Shield_DFR_09_RAZ">
+			</block>
+		</category>
+		<sep></sep>
+		
+		<category name="CAT_TECHNOJOLIE_MAQUETTE_FEUX" colour="210">
+			<category name="CAT_FEUX_IN" colour="#C12542">
+				<block type="feux_appel_pieton_voie1"></block>
+				<block type="feux_appel_pieton_voie2"></block>
+				<block type="feux_detection_ils"></block>
+				<block type="feux_detection_ir"></block>
+				<block type="feux_detection_ldr"></block>
+			</category>
+			<category name="CAT_FEUX_OUT" colour="#C12542">
+				<block type="feux_voie1_rouge"></block>
+				<block type="feux_voie1_orange"></block>
+				<block type="feux_voie1_vert"></block>
+				<block type="feux_voie2_rouge"></block>
+				<block type="feux_voie2_orange"></block>
+				<block type="feux_voie2_vert"></block>
+				<block type="feux_alarme_pieton">
+					<value name="TPS">
+					<shadow type="math_number">
+						<field name="NUM">1000</field>
+					</shadow>
+					</value>
+				</block>
+			</category>
+		</category>
 	</category>
 </toolbox>

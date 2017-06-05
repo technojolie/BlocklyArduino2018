@@ -8,20 +8,12 @@
         "visible": true
     },
     {
-        "source_url": "./Arduiled/blockly_Arduiled.xml",
-        "source_text": "Arduiled : allumer une DEL avec un téléphone portable",
-        "image": "./Arduiled/Vignette_Arduiled.jpg",
-        "link_url": "",
-        "link_text": "",
-        "visible": true
-    },
-    {
         "source_url": "./mbot/mbot-suiveur-ligne.xml",
         "source_text": "Robot mBot suiveur de ligne",
         "image": "./mbot/mbot-suiveur-ligne.jpg",
         "link_url": "",
         "link_text": "",
-        "visible": false
+        "visible": true
     },
     {
         "source_url": "./mbot/eviter obstacles.xml",
@@ -29,7 +21,7 @@
         "image": "./mbot/mbot.jpg",
         "link_url": "",
         "link_text": "",
-        "visible": false
+        "visible": true
     },
     {
         "source_url": "./grenouille/grenouille.xml",
@@ -37,7 +29,7 @@
         "image": "./grenouille/grenouille.jpg",
         "link_url": "http://fablabo.net/wiki/FablabJunior_Automne_2015/Projet4",
         "link_text": "sur Fablabo",
-        "visible": false
+        "visible": true
     },
     {
         "source_url": "./servo_potentio/servo_potentio.xml",
@@ -45,7 +37,7 @@
         "image": "./servo_potentio/servo_potentio_fritzing.jpg",
         "link_url": "",
         "link_text": "",
-        "visible": false
+        "visible": true
     },
     {
         "source_url": "./suiveur_de_ligne/suiveur_de_ligne.xml",
@@ -53,7 +45,7 @@
         "image": "./suiveur_de_ligne/suiveur_de_ligne_fritzing.jpg",
         "link_url": "http://fablabo.net/wiki/FablabJunior_Automne_2015/Projet2",
         "link_text": "sur Fablabo",
-        "visible": false
+        "visible": true
     },
     {
         "source_url": "./BT_PAF_Nantes/BT_PAF_Nantes.xml",
@@ -61,7 +53,7 @@
         "image": "./BT_PAF_Nantes/BT_PAF_Nantes_fritzing.jpg",
         "link_url": "",
         "link_text": "",
-        "visible": false
+        "visible": true
     },
     {
         "source_url": "./BT_piloter_DEL/BT_piloter_DEL.xml",
@@ -69,7 +61,7 @@
         "image": "./BT_piloter_DEL/BT_piloter_DEL_fritzing.jpg",
         "link_url": "https://www.youtube-nocookie.com/embed/vlJl28qE5vg?list=PLwy0yw3Oq4-uFJl0j-efUAAlfCbqtcTMr",
         "link_text": "tutos vidéo",
-        "visible": false
+        "visible": true
     },
     {
         "source_url": "./gant_sonar/gant_sonar1.xml",
@@ -77,12 +69,12 @@
         "image": "./gant_sonar/gant_sonar1.png",
         "link_url": "",
         "link_text": "",
-        "visible": false
+        "visible": true
     },
     {
-        "source_url": "./JeulinFeux/ClignoteOrange.xml",
-        "source_text": "Faire clignoter les feux oranges de la voie 1",
-        "image": "./JeulinFeux/microfeuxJeulinOrange.jpg",
+        "source_url": "./gant_sonar/gant_sonar2.xml",
+        "source_text": "simulation d'un gant sonar 2 : une détection d'un obstacle à gauche ou à droite fait vibrer un moteur droit ou gauche",
+        "image": "./gant_sonar/gant_sonar2.png",
         "link_url": "",
         "link_text": "",
         "visible": true

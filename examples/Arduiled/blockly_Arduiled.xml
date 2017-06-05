@@ -1,0 +1,69 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="base_setup_loop" id="v|EJ+gb10Uft4sX0D=1{" x="137" y="-87">
+    <statement name="DO">
+      <block type="Bluetooth_Shield_duinoFun" id="v_@NmH6koYIw1`hiD}8j">
+        <value name="BT_RX">
+          <shadow type="math_number" id="DR;~Pw#ldmS-^4bwQm2H">
+            <field name="NUM">2</field>
+          </shadow>
+        </value>
+        <value name="BT_TX">
+          <shadow type="math_number" id="]?yWlI3?}^L-6x,~rGLd">
+            <field name="NUM">3</field>
+          </shadow>
+        </value>
+        <next>
+          <block type="variables_set" id="D9^qw`a0LF**d94xArlq">
+            <field name="VAR">DonneesRecues</field>
+            <value name="VALUE">
+              <block type="math_number" id="/X`}7mUU1G~k0P#jyvlQ">
+                <field name="NUM">0</field>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <statement name="LOOP">
+      <block type="controls_if" id=":6|~Cd7Xv=BrH.Ibzjl+">
+        <value name="IF0">
+          <block type="soft_serialavailable" id="*Qp4`Ogc@^*LFP(?|%V1"></block>
+        </value>
+        <statement name="DO0">
+          <block type="variables_set" id="WJA0VpyWjAvy:[x-0-/=">
+            <field name="VAR">DonneesRecues</field>
+            <value name="VALUE">
+              <block type="soft_recvdonnees_set" id="gaDM{yi15h}SMN3DB)|s"></block>
+            </value>
+            <next>
+              <block type="controls_switch" id="u0IKm|E1XCq]mAU,EYw}">
+                <mutation casebreak="1"></mutation>
+                <field name="SWVAR">DonneesRecues</field>
+                <value name="CASE0">
+                  <block type="math_number" id="(aaS^9le!X++F-m)5i)/">
+                    <field name="NUM">1</field>
+                  </block>
+                </value>
+                <statement name="DO0">
+                  <block type="inout_buildin_led" id=")Hts+Uq{mRfT[9xengmb">
+                    <field name="STAT">HIGH</field>
+                  </block>
+                </statement>
+                <value name="CASE1">
+                  <block type="math_number" id="nkk-N8MtW~,JsUGv5DoN">
+                    <field name="NUM">2</field>
+                  </block>
+                </value>
+                <statement name="DO1">
+                  <block type="inout_buildin_led" id="p4`514JcO:o#:IU)9W)/">
+                    <field name="STAT">LOW</field>
+                  </block>
+                </statement>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+</xml>

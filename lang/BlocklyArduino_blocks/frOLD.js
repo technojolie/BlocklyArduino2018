@@ -223,9 +223,6 @@ Blockly.Msg.FIELDDROPDOWN_ONOFF = [["marche", "ON"], ["arrêt", "OFF"]]
 Blockly.Msg.INOUT_HIGH_LEVEL = "1 (état haut)";
 Blockly.Msg.INOUT_LOW_LEVEL = "0 (état bas)";
 
-
-
-
 //**********************************FieldInstance messages***********************************************
 Blockly.Msg.COMPONENT_WARN = 'A %1 configuration block with the same %2 name must be added to use this block!';
 
@@ -1691,22 +1688,3 @@ Blockly.Msg.AUTODUINO_TEXT99 = "Ecrire sur l'écran LCD (réf : LCD1)";
 Blockly.Msg.AUTODUINO_EDGE_TEXT = "détection ";
 Blockly.Msg.AUTODUINO_EDGE_INPUT = "sur l'entrée";
 Blockly.Msg.AUTODUINO_EDGE_UP_DOWN = [["front montant", "UP"], ["front descedant", "DOWN"]];
-
-
-
-//** ajout pour technojolie
-Blockly.Msg.TJCAP367_HELPURL = "http://www.centralmedia.fr/robotique/05-capteurs-detecteurs/capteur-de-temperature-analogique-numerique-cap367,g323p44276.html";
-Blockly.Msg.TJCAP367_TITLE = "la température (en °C) mesurée";
-Blockly.Msg.TJCAP367_TOOLTIP = 'Entrée Capteur de température';
-Blockly.Msg.TJCAP367_PIN_DIGITAL = "sur la broche Numérique";
-Blockly.Msg.CAT_TECHNOJOLIE = "Technojolie";
-Blockly.Msg.CAT_TECHNOJOLIE_IN = "Capteurs";
-Blockly.Msg.CAT_TECHNOJOLIE_SERVO = "Servomoteurs";
-Blockly.Msg.CAT_TECHNOJOLIE_COMM = "Communications";
-
-
-//** ajout pour maquette_feux
-Blockly.Msg.CAT_TECHNOJOLIE_MAQUETTE_FEUX = "Feux tricolores";
-Blockly.Msg.CAT_FEUX_IN = "capteurs";
-Blockly.Msg.CAT_FEUX_OUT = "actionneurs";
-Blockly.Msg.FEUX_DUREE_BUZZER = "Emettre un son pendant une durée (ms) ";
